@@ -1,0 +1,2 @@
+# django-ajax
+Ajax requests
