@@ -8,7 +8,7 @@ class FriendForm(forms.ModelForm):
     dob = forms.DateField(
         label='What is your birth date?',
         # change the range of the years from 1980 to currentYear - 5
-        widget=forms.SelectDateWidget(years=range(1980, datetime.date.today().year - 5))
+        widget=forms.SelectDateWidget(years=range(1970, datetime.date.today().year - 5))
     )
 
     def __init__(self, *args, **kwargs):
